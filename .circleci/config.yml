@@ -8,7 +8,7 @@ jobs:
       - checkout
       - setup_remote_docker
       - run: |
-          docker build -t [cheny9760laioffer]/around .
+          docker build -t cheny9760laioffer/around .
           docker login -u="$DOCKERHUB_USERNAME" -p="$DOCKERHUB_PASSWORD"
-          docker push [cheny9760laioffer]/around
+          docker push cheny9760laioffer/around
 
